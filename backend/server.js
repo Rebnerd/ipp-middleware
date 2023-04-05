@@ -93,13 +93,12 @@ app.post('/query', (req, res) => {
         availability = res_["printer-attributes-tag"]["printer-state"] == 'idle' && res_["printer-attributes-tag"]["printer-is-accepting-jobs"]
         queuedJob = res_["printer-attributes-tag"]["queued-job-count"]
         res.send({"status": availability, "wait": queuedJob})
-        res.send({"status": 'fuck', "wait": 'you'})
     });
 })
 
 
 app.post('/create-job', (req, res) => {
-    console.log('fuck')
+    console.log('ctrate a print job')
     var create_msg = {
         "operation-attributes-tag": {
             "requesting-user-name": "normal user"
