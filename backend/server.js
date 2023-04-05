@@ -98,7 +98,7 @@ app.post('/query', (req, res) => {
 
 
 app.post('/create-job', (req, res) => {
-    console.log('ctrate a print job')
+    console.log('create a print job')
     var create_msg = {
         "operation-attributes-tag": {
             "requesting-user-name": "normal user"
